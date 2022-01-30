@@ -5,7 +5,7 @@ const appDirectory = fs.realpathSync(process.cwd())
 
 const mode = process.env.NODE_ENV || 'development'
 const prod = mode === 'production'
-const entry = 'src/app.ts'
+const entry = prod ? 'src/rts-selection/index.ts' : 'src/app.ts'
 const htmlPlugin = !prod
     ? [
           new HtmlWebpackPlugin({
@@ -19,7 +19,7 @@ module.exports = {
     target: 'web',
     entry: path.resolve(appDirectory, entry), //path to the main .ts file
     output: {
-        filename: 'bundle.js', //name for the javascript file that is created/compiled in memory
+        filename: 'rts-selection.js', //name for the javascript file that is created/compiled in memory
     },
     resolve: {
         fallback: {

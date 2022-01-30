@@ -1,2 +1,2 @@
-# babylonjs-project-template
-Can be used to setup babylonjs projects.
+# babylon-rts-selection
+Can be used to select meshes, like in an RTS-Game.

@@ -14,8 +14,8 @@
             "trace": true,
             "sourceMapPathOverrides": {
                 // project name has to be changed 
-                "webpack://babylon-project-template/./src/*": "${workspaceFolder}/src/*",
-                "webpack://babylon-project-template/./node_modules/*": "${workspaceFolder}/node_modules/*"
+                "webpack://babylonjs-rts-selection/./src/*": "${workspaceFolder}/src/*",
+                "webpack://babylonjs-rts-selection/./node_modules/*": "${workspaceFolder}/node_modules/*"
             }
         }
     ]
